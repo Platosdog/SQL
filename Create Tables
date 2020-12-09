@@ -22,9 +22,9 @@ CREATE TABLE Product (
 	ProductId int Primary Key,
 );
 
-CREATE TABLE OderItem (
+CREATE TABLE OrderItem (
 	OrderId int FOREIGN KEY REFERENCES [Order](OrderId),
-	ProductIdentifier int FOREIGN KEY REFERENCES Product(ProductId),
+	ProductId int FOREIGN KEY REFERENCES Product(ProductId),
 	Price smallmoney NOT NULL,
 	Quantity tinyint, 
 );
