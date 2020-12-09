@@ -3,6 +3,7 @@ CREATE TABLE [Customer] (
 	LastName varchar(25) NOT NULL,
 	BirthDate date NOT NULL,
 	[Address] varchar(50) NOT NULL,
+	Customeremail varchar(255),
 	CustomerId int NOT NULL IDENTITY(1000,1) PRIMARY KEY
 );
 
