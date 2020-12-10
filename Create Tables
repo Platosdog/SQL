@@ -20,7 +20,7 @@ CREATE TABLE [Order]  (
 CREATE TABLE Product (
 	ProductName varchar(10),
 	Price smallmoney NOT NULL,
-	ProductId int Primary Key,
+	ProductId int Primary Key NOT NULL IDENTITY(1,1),
 );
 
 CREATE TABLE OrderItem (
