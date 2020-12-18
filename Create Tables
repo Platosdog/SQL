@@ -13,7 +13,7 @@ CREATE TABLE [Order]  (
      OrderDate datetimeoffset DEFAULT GETDATE(),
      TotalPrice decimal NOT NULL,
      ItemCount int NOT NULL,
-     OrderStatus varchar(20) DEFAULT ('placed')
+     OrderStatus varchar(20) DEFAULT ('placed'),
 );
 
 CREATE TABLE Product (
@@ -26,5 +26,6 @@ CREATE TABLE OrderItem (
 	OrderId int FOREIGN KEY REFERENCES [Order](OrderId),
 	ProductId int FOREIGN KEY REFERENCES Product(ProductId),
 	Price smallmoney NOT NULL,
-	Quantity tinyint 
+	Quantity tinyint,
+	OrderItemId int Primary KEY 
 );
