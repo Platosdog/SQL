@@ -1,4 +1,4 @@
-CREATE TABLE [Customer] (
+CREATE TABLE [Customers] (
 	FirstName varchar(25) NOT NULL,
 	LastName varchar(25) NOT NULL,
 	BirthDate date NOT NULL,
@@ -7,7 +7,7 @@ CREATE TABLE [Customer] (
 	CustomerId int NOT NULL IDENTITY(1000,1) PRIMARY KEY
 );
 
-CREATE TABLE [Order]  (
+CREATE TABLE [Orders]  (
      OrderId int NOT NULL IDENTITY(1000,1) PRIMARY KEY,
      CustomerId int FOREIGN KEY REFERENCES Customer(CustomerId),
      OrderDate datetimeoffset DEFAULT GETDATE(),
@@ -16,7 +16,7 @@ CREATE TABLE [Order]  (
      OrderStatus varchar(20) DEFAULT ('placed')
 );
 
-CREATE TABLE Product (
+CREATE TABLE Products (
 	ProductName varchar(10),
 	Price smallmoney NOT NULL,
 	ProductId int Primary Key NOT NULL IDENTITY(1,1)
