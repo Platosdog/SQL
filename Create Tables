@@ -13,13 +13,13 @@ CREATE TABLE [Order]  (
      OrderDate datetimeoffset DEFAULT GETDATE(),
      TotalPrice decimal NOT NULL,
      ItemCount int NOT NULL,
-     OrderStatus varchar(20) DEFAULT ('placed'),
+     OrderStatus varchar(20) DEFAULT ('placed')
 );
 
 CREATE TABLE Product (
 	ProductName varchar(10),
 	Price smallmoney NOT NULL,
-	ProductId int Primary Key NOT NULL IDENTITY(1,1),
+	ProductId int Primary Key NOT NULL IDENTITY(1,1)
 );
 
 CREATE TABLE OrderItem (
