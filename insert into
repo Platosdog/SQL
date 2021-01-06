@@ -3,7 +3,7 @@ Use SimpleOrder;
 INSERT INTO Product
     (ProductName, Price)
     VALUES
-    ('MacBook Pro', '2500.00'),
+    ('MacBook', '2500.00'),
     ('hoodie', '35.45'),
     ('Boots', '235.00')
 
