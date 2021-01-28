@@ -1,12 +1,5 @@
 Use SimpleOrder;
 
-INSERT INTO Product
-    (ProductName, Price)
-    VALUES
-    ('MacBook', '2500.00'),
-    ('hoodie', '35.45'),
-    ('Boots', '235.00')
-
 INSERT INTO Customer
     (FirstName, LastName, BirthDate, Address )
     VALUES
@@ -20,3 +13,10 @@ INSERT INTO Order
     ('5000.00', '2'),
     ('141.80', '4'),
     ('3055.00', '13')
+
+INSERT INTO Product
+    (ProductName, Price)
+    VALUES
+    ('MacBook', '2500.00'),
+    ('hoodie', '35.45'),
+    ('Boots', '235.00')
