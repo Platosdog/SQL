@@ -1,0 +1,5 @@
+Use SimpleOrder;
+ 
+    Update Order
+      SET OrderStatus = 'delivered'
+      WHERE OrderId = '1000'
