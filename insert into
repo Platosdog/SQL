@@ -5,14 +5,14 @@ INSERT INTO Customer
     VALUES
     ('Alan', 'Lear', '1953-10-26', '1425 W. Paseo Way, Tucsonn AZ'),
     ('Roger', 'Lear', '1935-03-20', '45 Falcon Rd, Las Vegas NV'),
-    ('Ryan', 'Giggs', '1973-11-29', 'Sir Matt Busby Way, Old Trafford, Manchester, M16 0RA')
+    ('Ryan', 'Giggs', '1973-11-29', 'Sir Matt Busby Way, Manchester, UK')
 
-INSERT INTO Order
+INSERT INTO [Order]
     (TotalPrice, ItemCount )
     VALUES
     ('5000.00', '2'),
     ('141.80', '4'),
-    ('3055.00', '13')
+    ('3055.00', '13')  
 
 INSERT INTO Product
     (ProductName, Price)
@@ -20,3 +20,8 @@ INSERT INTO Product
     ('MacBook', '2500.00'),
     ('hoodie', '35.45'),
     ('Boots', '235.00')
+
+INSERT INTO OrderItem
+    (Quantity, OrderItemId, Price )
+    VALUES
+    ('1', '2', '5')
