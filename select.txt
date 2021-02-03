@@ -1,0 +1,17 @@
+Use SimpleOrder;
+
+    SELECT FirstName, LastName, BirthDate, Address, CustomerId
+      FROM Customer
+      where FirstName = 'Jay'
+
+Use SimpleOrder;
+
+    SELECT FirstName, LastName, BirthDate, Address, CustomerEmail, CustomerId
+      FROM Customer
+      where LastName Like '%Lear%'
+
+Use SimpleOrder;
+
+    SELECT FirstName, BirthDate
+      FROM Customer
+      where BirthDate >= '1976, 02, 01' and <= '1996, 02, 01'
