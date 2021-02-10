@@ -12,6 +12,12 @@ Use SimpleOrder;
 
 Use SimpleOrder;
 
-    SELECT FirstName, BirthDate
-      FROM Customer
-      where BirthDate >= '1976, 02, 01' and <= '1996, 02, 01'
+    SELECT FirstName, BirthDate, DATEDIFF(yyyy, BirthDate, GETDATE()) as age
+    	FROM Customer
+		WHERE DATEDIFF(yyyy, BirthDate, GETDATE()) > 25
+
+    Use SimpleOrder;
+
+    SELECT FirstName, BirthDate, DATEDIFF(yyyy, BirthDate, GETDATE()) as age
+    	FROM Customer
+		WHERE DATEDIFF(yyyy, BirthDate, GETDATE()) > 25 and DATEDIFF(yyyy, BirthDate, GETDATE()) <45
