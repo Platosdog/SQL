@@ -1,0 +1,21 @@
+Use SimpleOrder;
+
+	SELECT [OrderId], CustomerId, OrderDate, TotalPrice, ItemCount, OrderStatus
+		FROM [Order]
+		ORDER BY TotalPrice DESC
+
+
+Use SimpleOrder;
+
+	SELECT ProductName, Price, ProductId
+		FROM Product
+		ORDER BY ProductName ASC
+
+
+Use SimpleOrder;
+
+	SELECT [OrderId], CustomerId, OrderDate, TotalPrice, ItemCount, OrderStatus
+		FROM [Order]
+		WHERE TotalPrice > 10
+		ORDER BY 
+			ItemCount ASC
