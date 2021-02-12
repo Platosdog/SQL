@@ -1,5 +1,5 @@
 Use SimpleOrder;
 
-	SELECT [OrderId], CustomerId, OrderDate, ROUND (TotalPrice, 1), ItemCount, OrderStatus
+	SELECT [OrderId], CustomerId, OrderDate, ROUND (TotalPrice, 1) AS Price, ItemCount, OrderStatus
 		FROM [Order]
 		WHERE TotalPrice > 100
