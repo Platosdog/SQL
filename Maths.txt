@@ -3,3 +3,8 @@ Use SimpleOrder;
 	SELECT [OrderId], CustomerId, OrderDate, ROUND (TotalPrice, 1) AS Price, ItemCount, OrderStatus
 		FROM [Order]
 		WHERE TotalPrice > 100
+
+Use SimpleOrder;
+
+	SELECT [OrderId], CustomerId, OrderDate, TotalPrice/ItemCount, OrderStatus, TotalPrice
+		FROM [Order]
