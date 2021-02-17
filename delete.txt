@@ -1,4 +1,4 @@
 Use SimpleOrder;
 
     DELETE FROM Customer
-      WHERE CustomerId = '1019'
+      WHERE CustomerId = 1019
