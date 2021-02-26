@@ -1,0 +1,7 @@
+Use SimpleOrder;
+
+SELECT i.OrderItemId, c.FirstName, c.LastName, o.OrderDate, o.ProductName, i.Price
+      FROM OrderItem i
+      JOIN [Order] o ON i.OrderId = o.OrderId
+      JOIN Customer c ON o.CustomerId = c.CustomerId
+      WHERE c.CustomerId = 5
