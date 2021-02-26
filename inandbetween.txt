@@ -1,0 +1,19 @@
+Use SimpleOrder;
+
+	SELECT *
+    From Order
+    Where TotalPrice > 10 and TotalPrice < 300
+
+Use SimpleOrder;
+
+	SELECT *
+    From Product
+    WHERE ProductName = 'Macbook'
+
+	SELECT *
+	From OrderItem 
+	WHERE ProductId IN (6);
+
+	SELECT *
+	From [Order]
+	WHERE OrderId in (1000);
