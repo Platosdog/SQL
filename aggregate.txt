@@ -1,0 +1,6 @@
+Use SimpleOrder;
+
+    SELECT Max(OrderDate), OrderId
+    From [Order]
+    group by OrderID
+    
