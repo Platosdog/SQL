@@ -7,13 +7,13 @@ Use SimpleOrder;
 Use SimpleOrder;
 
 	SELECT *
-    From Product
-    WHERE ProductName = 'Macbook'
-
-	SELECT *
-	From OrderItem 
-	WHERE ProductId IN (6);
-
-	SELECT *
-	From [Order]
-	WHERE OrderId in (1000);
+    From [Order]
+	Where OrderId IN (
+		SELECT OrderId
+		From OrderItem
+		Where ProductId IN (
+			SELECT ProductId
+			From Product
+			Where ProductName = 'MacBook'
+		)
+	)
