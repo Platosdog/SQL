@@ -1,0 +1,7 @@
+Use SimpleOrder;
+
+   SELECT i.ProductName, i.Price, i.ProductID, c.CustomerId, o.OrderId, o.ProductId 
+      FROM Product i
+      JOIN OrderItem o ON i.ProductId = o.ProductId
+      JOIN [Order] c ON o.OrderId = c.CustomerId
+      WHERE c.CustomerId = 1003
